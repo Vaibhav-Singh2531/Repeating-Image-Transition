@@ -1,7 +1,7 @@
 
 const Footer = () => {
   return (
-    <footer className="flex min-h-[300px] items-end justify-between font-[500] text-[18px]">
+    <footer className="flex min-h-[300px] items-end justify-between font-[500] text-[18px] relative z-[1]">
       <span>
         Made by{' '}
         <a href="https://codrops.com/" className="line">

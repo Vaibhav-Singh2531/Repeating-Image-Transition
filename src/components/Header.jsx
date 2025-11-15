@@ -7,9 +7,10 @@ const Header = () => {
         gap-2
         text-[18px] 
         font-[500]
-        z-[1000]
         px-0 
         py-0
+        relative
+        z-[1]
 
         lg:grid-cols-4    /* Desktop → 4 columns */
       "

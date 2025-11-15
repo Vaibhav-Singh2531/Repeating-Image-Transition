@@ -19,18 +19,18 @@ const Panel = forwardRef(({ isOpen, item, onClose, panelImgRef, panelContentRef 
   return (
     <figure
       ref={panelRef}
-      className="panel fixed m-0 w-full h-screen p-[var(--page-padding)] top-0 left-0 grid gap-[var(--panel-gap)] opacity-0 pointer-events-none z-[2000] will-change-[transform,clip-path] justify-center"
+      className="panel fixed m-0 w-full h-screen p-[var(--page-padding)] top-0 left-0 grid gap-[var(--panel-gap)] opacity-0 pointer-events-none z-[9999] will-change-[transform,clip-path] justify-center bg-[var(--color-bg)]"
       role="img"
       aria-labelledby="caption"
     >
       <div
         ref={panelImgRef}
-        className="panel__img bg-cover bg-center w-full h-auto aspect-[4/5] md:h-full md:w-auto md:max-w-full"
+        className="panel__img bg-cover bg-center w-full h-auto aspect-[4/5] md:h-full md:w-auto md:max-w-full relative z-[1]"
         style={{ backgroundImage: item ? `url(assets/${item.img})` : 'none' }}
       />
       <figcaption
         ref={panelContentRef}
-        className="panel__content flex flex-col gap-2 justify-end items-end text-right"
+        className="panel__content flex flex-col gap-2 justify-end items-end text-right relative z-[1]"
         id="caption"
       >
         <h3 className="m-0 text-base font-medium">{item?.title || ''}</h3>

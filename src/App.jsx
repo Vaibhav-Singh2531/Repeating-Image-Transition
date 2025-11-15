@@ -99,17 +99,17 @@ function App() {
           <GridSection key={index} section={section} onItemClick={handleItemClick} />
         ))}
 
-        <Panel
-          ref={panelRef}
-          panelImgRef={panelImgRef}
-          panelContentRef={panelContentRef}
-          isOpen={isPanelOpen}
-          item={selectedItem}
-          onClose={handleClose}
-        />
-
         <Footer />
       </main>
+      
+      <Panel
+        ref={panelRef}
+        panelImgRef={panelImgRef}
+        panelContentRef={panelContentRef}
+        isOpen={isPanelOpen}
+        item={selectedItem}
+        onClose={handleClose}
+      />
     </div>
   );
 }

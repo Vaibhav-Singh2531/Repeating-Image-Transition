@@ -162,7 +162,7 @@ export const useImageTransition = () => {
         width: step.width,
         height: step.height,
         clipPath: clipPaths.from,
-        zIndex: 1000 + index,
+        zIndex: 10000 + index,
         backgroundPosition: '50% 50%',
         rotationZ: gsap.utils.random(-configRef.current.rotationRange, configRef.current.rotationRange),
       };
@@ -211,7 +211,7 @@ export const useImageTransition = () => {
     const clipPaths = getClipPathsForDirection(configRef.current.clipPathDirection);
 
     gsap.set(panelContentElement, { opacity: 0 });
-    gsap.set(panelElement, { opacity: 1, pointerEvents: 'auto' });
+    gsap.set(panelElement, { opacity: 1, pointerEvents: 'auto', zIndex: 9999 });
 
     gsap
       .timeline({
