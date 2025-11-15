@@ -123,7 +123,7 @@
     pointer-events: none;
   }
 
-  .grid {
+.main-grid {
     @apply py-4;
     display: grid;
     grid-template-columns: repeat(var(--column-count), minmax(var(--column), 1fr));

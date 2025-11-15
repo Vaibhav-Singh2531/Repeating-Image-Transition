@@ -11,7 +11,7 @@ const GridSection = ({ section, onItemClick }) => {
           {section.meta}
         </span>
       </div>
-      <div className="grid">
+      <div className="main-grid">
         {section.items.map((item) => (
           <GridItem key={item.id} item={item} onClick={onItemClick} />
         ))}

@@ -25,7 +25,7 @@ const Panel = forwardRef(({ isOpen, item, onClose, panelImgRef, panelContentRef 
     >
       <div
         ref={panelImgRef}
-        className="panel__img bg-cover bg-center w-full h-auto aspect-[4/5] md:h-full md:w-auto md:max-w-full relative z-[1]"
+        className="panel__img bg-cover bg-center w-[90vw] h-[120vw] max-h-[90vh] mx-auto sm:w-full relative z-[1]"
         style={{ backgroundImage: item ? `url(assets/${item.img})` : 'none' }}
       />
       <figcaption
