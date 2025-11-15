@@ -43,11 +43,21 @@ const Header = () => {
         </a>
       </nav>
 
-      <nav className="flex lg:flex-col ml-0 lg:ml-auto">
-        <a href="https://spline.design/?ref=codrops-demos">design, animate, and </a>
-        <a href="https://spline.design/?ref=codrops-demos">ship real-time 3d </a>
-        <a href="https://spline.design/?ref=codrops-demos">experiences with spline.</a>
-      </nav>
+<nav
+  className="
+    lg:flex lg:flex-col lg:ml-auto lg:gap-[0.125rem]
+  "
+>
+  {/* MOBILE VERSION (single line) */}
+  <span className="lg:hidden block">
+    design, animate, and ship real-time 3d experiences with spline.
+  </span>
+
+  {/* DESKTOP VERSION (three lines) */}
+  <span className="hidden lg:inline">design, animate, and </span>
+  <span className="hidden lg:inline">ship real-time 3d </span>
+  <span className="hidden lg:inline">experiences with spline.</span>
+</nav>
 
     </header>
   );
